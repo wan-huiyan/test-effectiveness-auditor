@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "wan-huiyan-test-effectiveness-auditor",
+  "description": "Single-plugin marketplace for test-effectiveness-auditor — quantitatively measure how helpful a project's automated tests are at catching real bugs. Also bundled in wan-huiyan/claude-ecosystem-hygiene as the 'measure project quality' companion to claude-code-ab-harness.",
+  "owner": {
+    "name": "wan-huiyan"
+  },
+  "plugins": [
+    {
+      "name": "test-effectiveness-auditor",
+      "source": "./plugins/test-effectiveness-auditor",
+      "description": "Quantitatively measure how effective a project's automated test suite is at catching real bugs, by replaying historical incidents at pre-fix commits and classifying CI failure history",
+      "version": "1.0.0"
+    }
+  ]
+}
